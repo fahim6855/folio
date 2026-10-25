@@ -67,7 +67,7 @@ export function LookupForm({ batches, defaults }: Props) {
             minLength={3}
             required
             autoComplete="off"
-            placeholder="e.g. 26101"
+            placeholder="e.g. 26990"
             defaultValue={defaults.examRoll}
           />
         </div>
@@ -84,7 +84,7 @@ export function LookupForm({ batches, defaults }: Props) {
             minLength={3}
             required
             autoComplete="off"
-            placeholder="e.g. 32085"
+            placeholder="e.g. 32990"
             defaultValue={defaults.classRoll}
           />
         </div>
