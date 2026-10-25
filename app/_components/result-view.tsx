@@ -226,7 +226,7 @@ export function BadInput() {
     <section aria-live="polite">
       <ScrollToResult />
       <Notice icon={<SearchOff className="size-7" />} title="Check your roll numbers">
-        Exam roll and class roll should contain digits only, for example 26101 and 32085.
+        Exam roll and class roll should contain digits only, for example 26990 and 32990.
       </Notice>
     </section>
   );

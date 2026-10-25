@@ -55,7 +55,11 @@ export function SiteFooter() {
           </tbody>
         </table>
       </details>
+      <div className="flex justify-center w-full mt-6 mb-4">
 
+         <button disabled={true} className=" mx-auto text-center bg-gold-300 cursor-pointer text-black/90 rounded-xl py-4 px-8 text-md">
+         📄 Save Pdf <span className="text-[12px]">Coming Soon</span></button>
+      </div>
       <p className="mx-auto mt-8 max-w-xl text-center text-sm leading-relaxed text-folio-800/70">
         Folio is an unofficial, student-built results viewer. For anything official, the result
         published by the Department of Accounting, University of Dhaka is the final reference.
