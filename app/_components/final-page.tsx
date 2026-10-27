@@ -14,7 +14,7 @@ export function FinalPage() {
         <section className="mx-auto max-w-3xl pb-8 pt-4 text-center sm:pb-10 sm:pt-10">
           <Notice page="final" />
           <p className="mx-auto w-fit rounded-full border border-gold-500/40 bg-white/60 px-4 py-1.5 text-[0.65rem] font-bold uppercase tracking-[0.16em] text-folio-800 shadow-[0_1px_0_#fff_inset] sm:text-xs sm:tracking-[0.22em]">
-            {SITE.program} · {SITE.department}
+            DU · {SITE.department}
           </p>
           <h1 className="font-display mt-6 text-4xl font-semibold leading-[1.08] tracking-tight text-folio-900 sm:text-6xl">
             Your semester result,

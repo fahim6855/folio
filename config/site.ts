@@ -8,6 +8,7 @@ export const SITE = {
   department: "Department of Accounting",
   university: "University of Dhaka",
   program: "BBA",
+  departmentShort: "DU"
 };
 
 /**
@@ -50,6 +51,6 @@ export const FINAL_MAX = {
 export type NoticeConfig = { text: string; date?: string } | null;
 
 export const NOTICES: { final: NoticeConfig; mid: NoticeConfig } = {
-  final: { text: "The 1st semester final result of the 32nd batch has been published." },
+  final: { text: "The 1st Midterm results for the 2nd Semester (Section B - Partial) have been published." },
   mid: null,
 };

@@ -74,6 +74,12 @@ export function MidView({ result, batch, semester, round }: { result: MidResult;
           );
         })}
       </div>
+
+              <div className="button flex justify-center">
+                <button type="submit" disabled={true} className="btn-gold mt-6 text-base disabled:opacity-70 sm:mt-7">
+                📄   Save PDF <span className="text-[12px] ml-4 opacity-50">Coming soon</span>
+                </button>
+        </div>
     </section>
   );
 }

@@ -7,8 +7,13 @@ export function SiteHeader() {
   return (
     <header className="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-4 py-4 sm:px-8 sm:py-7">
       <div className="flex min-w-0 items-center gap-2.5 sm:gap-3">
+        <a href="/">
         <FolioMark className="size-9 shrink-0 drop-shadow-[0_8px_10px_rgba(8,56,47,0.35)] sm:size-10" />
+        </a> 
+        <a href="/">
         <span className="font-display text-xl font-semibold tracking-tight text-folio-900 sm:text-2xl">{SITE.name}</span>
+
+        </a>
       </div>
       <div className="flex items-center gap-2.5 sm:gap-4">
         <p className="mr-2 hidden text-sm font-medium text-folio-800/80 lg:block">

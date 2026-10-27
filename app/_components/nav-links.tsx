@@ -14,7 +14,7 @@ export function NavLinks() {
   return (
     <nav
       aria-label="Pages"
-      className="flex gap-1 rounded-full bg-white/75 p-1 shadow-[0_1px_0_#fff_inset] ring-1 ring-folio-700/15"
+      className="cursor-pointer flex gap-1 rounded-full bg-white/75 p-1 shadow-[0_1px_0_#fff_inset] ring-1 ring-folio-700/15"
     >
       {TABS.map((t) => {
         const active = t.match.includes(pathname);

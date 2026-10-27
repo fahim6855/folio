@@ -17,7 +17,7 @@ export function MenuDrawer() {
         onClick={() => ref.current?.showModal()}
         aria-label="Open menu"
         aria-haspopup="dialog"
-        className="grid size-10 shrink-0 place-items-center rounded-full bg-white/80 text-folio-800 shadow-[0_1px_0_#fff_inset] ring-1 ring-folio-700/15 hover:bg-folio-50"
+        className="cursor-pointer grid size-10 shrink-0 place-items-center rounded-full bg-white/80 text-folio-800 shadow-[0_1px_0_#fff_inset] ring-1 ring-folio-700/15 hover:bg-folio-50"
       >
         <MenuIcon className="size-5" />
       </button>
@@ -40,7 +40,7 @@ export function MenuDrawer() {
               type="button"
               onClick={() => ref.current?.close()}
               aria-label="Close menu"
-              className="chip-glass grid size-9 place-items-center !p-0"
+              className="cursor-pointer chip-glass grid size-9 place-items-center !p-0"
             >
               <CloseIcon className="size-5" />
             </button>

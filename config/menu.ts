@@ -12,8 +12,9 @@ export type MenuEntry =
   | { kind: "link"; label: string; href: string | null; note?: string; external?: boolean };
 
 export const MENU: MenuEntry[] = [
-  { kind: "grade-scale" },
+  { kind: "link", label: "Developer", external:true, href: "https://fahimafnan.vercel.app/", note: "Fahim Afnan" },
   { kind: "link", label: "Reference PDF", href: null, note: "Coming soon" },
+  { kind: "grade-scale" },
   {
     kind: "text",
     title: "About Folio",
