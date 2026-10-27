@@ -2,91 +2,14 @@ import type { SVGProps } from "react";
 
 type IconProps = SVGProps<SVGSVGElement>;
 
-const stroke = {
+const line = {
   viewBox: "0 0 24 24",
   fill: "none",
   stroke: "currentColor",
-  strokeWidth: 1.6,
   strokeLinecap: "round",
   strokeLinejoin: "round",
   "aria-hidden": true,
 } as const;
-
-/** 1101 · Introduction to Financial Accounting: calculator */
-function Calculator(p: IconProps) {
-  return (
-    <svg {...stroke} {...p}>
-      <rect x="5" y="2.5" width="14" height="19" rx="2.6" />
-      <rect x="8" y="5.6" width="8" height="3.6" rx="0.9" />
-      <path d="M8.6 13h.01M12 13h.01M15.4 13h.01M8.6 16.6h.01M12 16.6h.01M15.4 16.6h.01" strokeWidth={2.2} />
-    </svg>
-  );
-}
-
-/** 1102 · Introduction to Business: briefcase */
-function Briefcase(p: IconProps) {
-  return (
-    <svg {...stroke} {...p}>
-      <rect x="3" y="7.5" width="18" height="12.5" rx="2.6" />
-      <path d="M8.5 7.5V6.2A2.2 2.2 0 0 1 10.7 4h2.6a2.2 2.2 0 0 1 2.2 2.2v1.3" />
-      <path d="M3 13h18" />
-      <path d="M10.4 13v1.7h3.2V13" />
-    </svg>
-  );
-}
-
-/** 1103 · Computer Concepts and Applications: monitor with code brackets */
-function Monitor(p: IconProps) {
-  return (
-    <svg {...stroke} {...p}>
-      <rect x="3" y="4" width="18" height="12.5" rx="2.4" />
-      <path d="M8 20.5h8M12 16.5v4" />
-      <path d="m9.6 8.6-2 1.9 2 1.9M14.4 8.6l2 1.9-2 1.9" />
-    </svg>
-  );
-}
-
-/** 1104 · Mathematics for Business Decisions: sigma */
-function Sigma(p: IconProps) {
-  return (
-    <svg {...stroke} {...p}>
-      <path d="M17.6 5H6.8l5.7 7-5.7 7h10.8" />
-    </svg>
-  );
-}
-
-/** 1105 · Business Communication: speech bubble */
-function Bubble(p: IconProps) {
-  return (
-    <svg {...stroke} {...p}>
-      <path d="M6.2 4h11.6A2.7 2.7 0 0 1 20.5 6.7v7.1a2.7 2.7 0 0 1-2.7 2.7H11l-4.2 3.5v-3.5h-.6A2.7 2.7 0 0 1 3.5 13.8V6.7A2.7 2.7 0 0 1 6.2 4z" />
-      <path d="M7.8 8.4h8.4M7.8 11.7h5" />
-    </svg>
-  );
-}
-
-/** Fallback for course codes without a dedicated icon */
-function Book(p: IconProps) {
-  return (
-    <svg {...stroke} {...p}>
-      <path d="M5 4.5A2.5 2.5 0 0 1 7.5 2H19v17H7.5A2.5 2.5 0 0 0 5 21.5z" />
-      <path d="M5 4.5v17M9 6.5h6" />
-    </svg>
-  );
-}
-
-const COURSE_ICONS: Record<string, (p: IconProps) => React.JSX.Element> = {
-  "1101": Calculator,
-  "1102": Briefcase,
-  "1103": Monitor,
-  "1104": Sigma,
-  "1105": Bubble,
-};
-
-export function CourseIcon({ code, ...props }: IconProps & { code: string }) {
-  const Icon = COURSE_ICONS[code] ?? Book;
-  return <Icon {...props} />;
-}
 
 /** Folio mark: a glossy emerald tile holding a folded page. */
 export function FolioMark(props: IconProps) {
@@ -119,7 +42,7 @@ export function FolioMark(props: IconProps) {
 
 export function ArrowRight(props: IconProps) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.2} strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>
+    <svg {...line} strokeWidth={2.2} {...props}>
       <path d="M5 12h14M13 6l6 6-6 6" />
     </svg>
   );
@@ -127,7 +50,7 @@ export function ArrowRight(props: IconProps) {
 
 export function SearchOff(props: IconProps) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>
+    <svg {...line} strokeWidth={1.7} {...props}>
       <circle cx="10.5" cy="10.5" r="6.5" />
       <path d="m20 20-4.9-4.9M8 8l5 5M13 8l-5 5" />
     </svg>
@@ -136,8 +59,41 @@ export function SearchOff(props: IconProps) {
 
 export function Hourglass(props: IconProps) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" aria-hidden {...props}>
+    <svg {...line} strokeWidth={1.7} {...props}>
       <path d="M6.5 3h11M6.5 21h11M7.5 3c0 4.5 2.2 6 4.5 9-2.3 3-4.5 4.5-4.5 9M16.5 3c0 4.5-2.2 6-4.5 9 2.3 3 4.5 4.5 4.5 9" />
+    </svg>
+  );
+}
+
+export function Bell(props: IconProps) {
+  return (
+    <svg {...line} strokeWidth={1.8} {...props}>
+      <path d="M6 9.5a6 6 0 1 1 12 0c0 4.5 1.5 5.5 2 6.5H4c.5-1 2-2 2-6.5z" />
+      <path d="M10 19a2 2 0 0 0 4 0" />
+    </svg>
+  );
+}
+
+export function MenuIcon(props: IconProps) {
+  return (
+    <svg {...line} strokeWidth={2} {...props}>
+      <path d="M4 7h16M4 12h16M4 17h16" />
+    </svg>
+  );
+}
+
+export function CloseIcon(props: IconProps) {
+  return (
+    <svg {...line} strokeWidth={2} {...props}>
+      <path d="M6 6l12 12M18 6 6 18" />
+    </svg>
+  );
+}
+
+export function External(props: IconProps) {
+  return (
+    <svg {...line} strokeWidth={1.9} {...props}>
+      <path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
     </svg>
   );
 }

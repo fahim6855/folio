@@ -328,3 +328,11 @@ body {
     --tone-glow: rgba(127, 29, 29, 0.6);
   }
 }
+
+/* Slide-over menu (<dialog>): dim backdrop, and stop the page scrolling behind it */
+dialog::backdrop {
+  background: rgba(4, 36, 30, 0.55);
+}
+html:has(dialog[open]) {
+  overflow: hidden;
+}

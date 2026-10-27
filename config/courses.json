@@ -1,0 +1,55 @@
+{
+  "university": "University of Dhaka",
+  "department": "Accounting & Information Systems",
+  "program": "BBA",
+  "year": 2026,
+  "courses": [
+    {"semester": 1, "course_code": "1101", "course_name": "Introduction to Financial Accounting", "practical": false},
+    {"semester": 1, "course_code": "1102", "course_name": "Introduction to Business", "practical": false},
+    {"semester": 1, "course_code": "1103", "course_name": "Computer Concepts and Applications", "practical": true},
+    {"semester": 1, "course_code": "1104", "course_name": "Mathematics for Business Decisions - I", "practical": false},
+    {"semester": 1, "course_code": "1105", "course_name": "Business Communication", "practical": false},
+
+    {"semester": 2, "course_code": "1201", "course_name": "Intermediate Financial Accounting", "practical": false},
+    {"semester": 2, "course_code": "1202", "course_name": "Microeconomics", "practical": false},
+    {"semester": 2, "course_code": "1203", "course_name": "Management and Organizational Behavior", "practical": false},
+    {"semester": 2, "course_code": "1204", "course_name": "Mathematics for Business Decisions - II", "practical": false},
+    {"semester": 2, "course_code": "1205", "course_name": "Bangladesh Studies", "practical": false},
+
+    {"semester": 3, "course_code": "2101", "course_name": "Advanced Financial Accounting - I", "practical": false},
+    {"semester": 3, "course_code": "2102", "course_name": "Macroeconomics", "practical": false},
+    {"semester": 3, "course_code": "2103", "course_name": "Programming and Database Management", "practical": false},
+    {"semester": 3, "course_code": "2104", "course_name": "General Science and Environment", "practical": false},
+    {"semester": 3, "course_code": "2105", "course_name": "Basic Business Statistics", "practical": false},
+
+    {"semester": 4, "course_code": "2201", "course_name": "Advanced Financial Accounting - II", "practical": false},
+    {"semester": 4, "course_code": "2202", "course_name": "Financial Management", "practical": false},
+    {"semester": 4, "course_code": "2203", "course_name": "Cost Accounting", "practical": false},
+    {"semester": 4, "course_code": "2204", "course_name": "Marketing", "practical": false},
+    {"semester": 4, "course_code": "2205", "course_name": "Applied Business Statistics", "practical": false},
+
+    {"semester": 5, "course_code": "3101", "course_name": "Management Accounting", "practical": false},
+    {"semester": 5, "course_code": "3102", "course_name": "Banking and Insurance", "practical": false},
+    {"semester": 5, "course_code": "3103", "course_name": "Auditing and Assurance", "practical": false},
+    {"semester": 5, "course_code": "3104", "course_name": "Income Tax: Laws and Practices", "practical": false},
+    {"semester": 5, "course_code": "3105", "course_name": "Business Laws", "practical": false},
+
+    {"semester": 6, "course_code": "3201", "course_name": "Forensic Accounting and Fraud Investigation", "practical": false},
+    {"semester": 6, "course_code": "3202", "course_name": "Corporate Finance", "practical": false},
+    {"semester": 6, "course_code": "3203", "course_name": "Accounting Information Systems", "practical": false},
+    {"semester": 6, "course_code": "3204", "course_name": "VAT and Cross-border Taxation", "practical": false},
+    {"semester": 6, "course_code": "3205", "course_name": "Corporate Laws, Governance and Secretarial Practices", "practical": false},
+
+    {"semester": 7, "course_code": "4101", "course_name": "Advanced Management Accounting", "practical": false},
+    {"semester": 7, "course_code": "4102", "course_name": "Financial Market & Investment Analysis", "practical": false},
+    {"semester": 7, "course_code": "4103", "course_name": "IT Governance and Information System Audit", "practical": false},
+    {"semester": 7, "course_code": "4104", "course_name": "Supply Chain and Operation Management", "practical": false},
+    {"semester": 7, "course_code": "4105", "course_name": "Public Sector Accounting and Financial Management", "practical": false},
+
+    {"semester": 8, "course_code": "4201", "course_name": "Accounting Theory and Standards", "practical": false},
+    {"semester": 8, "course_code": "4202", "course_name": "Financial Statement Analysis", "practical": false},
+    {"semester": 8, "course_code": "4203", "course_name": "Investment Analysis and Portfolio Management", "practical": false},
+    {"semester": 8, "course_code": "4204", "course_name": "Basic Econometrics", "practical": false},
+    {"semester": 8, "course_code": "4205", "course_name": "Development Theory and Bangladesh Economy", "practical": false}
+  ]
+}
